@@ -60,8 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return SafeArea(
+      child:Scaffold(
+        body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Expanded(
@@ -87,6 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _sendFlutterIncrement,
         child: const Icon(Icons.add),
       ),
+     ),
     );
   }
 }
